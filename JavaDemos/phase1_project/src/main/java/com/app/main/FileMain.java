@@ -22,11 +22,11 @@ public class FileMain {
 		MyFileBoImpl fileBO = new MyFileBoImpl();
 		
 		/* This is our welcome screen; */
-		System.out.println("\nWelcome To FileExplorer!");
+		System.out.println("\nWelcome To MyRepository!");
 		System.out.println(new String(new char[60]).replace("\0", "-"));
 		System.out.println("Developed by: Kunal Acharya");
 		System.out.println("Email: kunalacharya58@gmail.com");
-		System.out.println("Choose any of the option and press Enter!");
+		System.out.println("Choose an option and press Enter!");
 		System.out.println(new String(new char[60]).replace("\0", "-"));
 		/* end of welcome screen; */
 		
@@ -70,6 +70,7 @@ public class FileMain {
 					}					
 				} catch(BusinessException e) {
 					System.out.println(e.getMessage());
+					System.out.println("Try creating a file first!");
 				} catch (FileNotFoundException e) {
 					System.out.println("File Not Found!");
 				} catch (IOException e) {
