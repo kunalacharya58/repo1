@@ -1,13 +1,13 @@
 package com.demo.main;
 
-import java.util.Date;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
+import com.demo.model.Course;
+import com.demo.model.Student;
 import com.demo.model.Teacher;
 
 public class Main {
@@ -33,16 +33,33 @@ public class Main {
 		Transaction transaction = session.beginTransaction();
 				
 		// begin writing here
-		String[] teachers = {"Suman Jambekar", "Howard Packkard", "Skyler White", "Judy Greer"};
+//		String[] teachers = {"Otto Octavius", "Walter White", "Skyler White", "Paul Rudd"};
+//		
+//		for (String t : teachers) {
+//			String[] name = t.split(" ");
+//			Teacher T = new Teacher(name[0], name[1]);
+//			System.out.println(T);
+//			session.save(T);S
+//		}
+//		
+//		String[] students = {"Skinny Peat", "Jesse Pinkman", "Peter Parker", "Edward Norton", "Harry Osborn"};
+//		
+//		for (String t : students) {
+//			String[] name = t.split(" ");
+//			Student S = new Student(name[0], name[1]);
+//			System.out.println(S);
+//			session.save(S);
+//		} 
 		
-		for (String t : teachers) {
-			String[] name = t.split(" ");
-			Teacher T = new Teacher(name[0], name[1]);
-			System.out.println(T);
-			//session.save(T);
+		String[] courses = {"Java", "Spring", "Hibernate", "REST API", "Maven", "Big Data"};
+		for (String c : courses) {
+			Course course = new Course(c, c.length());
+			session.save(course);
 		}
-		
-		String[] students = {"Suman Jambekar", "Howard Packkard", "Skyler White", "Judy Greer"};
+//		
+//		Course c = new Course("Spring", 3);
+//		session.save(c);
+//		
 		
 		// close
 		transaction.commit();
