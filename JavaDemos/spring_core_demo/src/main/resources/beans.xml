@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="h1" class="com.demo.model.Hello" lazy-init="true" scope="prototype">
+		<constructor-arg name="message"
+			value="hello world from Spring from constructor1"/>
+		<property name="message"
+			value="hello world from Spring1"/>
+	</bean>
+	
+	<bean id="h2" class="com.demo.model.Hello">
+		<constructor-arg name="message"
+			value="hello world from Spring from constructor2"/>
+			<property name="message"
+			value="hello world from Spring2"/>
+	</bean>
+	
+</beans>
