@@ -6,11 +6,12 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.hello.demo.model.Message;
 import com.hello.demo.service.MessageService;
 
-@Component
+@Service
 public class MessageServiceImpl implements MessageService{
 
 	public static Map<Integer, Message> map = new HashMap<>();

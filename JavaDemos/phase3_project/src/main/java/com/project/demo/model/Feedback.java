@@ -1,30 +1,30 @@
 package com.project.demo.model;
 
-/*
-JSON Body:
-{
-	"id": 1,
-	"username": "jarvis7698",
-	"response": "please make this project fast",
-	"rating": 5
-}
- */
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class Feedback {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String username;
 	private String response;
+	private String source;
 	private int rating;
 	
 	public Feedback() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Feedback(String username, String response, int rating) {
+	public Feedback(String username, String response, String source, int rating) {
 		super();
 		this.username = username;
 		this.response = response;
+		this.source = source;
 		this.rating = rating;
 	}
 
@@ -58,6 +58,14 @@ public class Feedback {
 
 	public void setRating(int rating) {
 		this.rating = rating;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 }
