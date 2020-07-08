@@ -42,7 +42,8 @@ public class FeedbackServiceImpl implements FeedbackService {
 
 	@Override
 	public Feedback updateFeedback(Feedback feedback) throws BusinessException {
-		if (validateFeedback(feedback)) {			
+		if (validateFeedback(feedback)) {
+			getFeedbackById(feedback.getId());
 			return dao.save(feedback);
 		} else {
 			throw new BusinessException("Invalid feedback, please check!");

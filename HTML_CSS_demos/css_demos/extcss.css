@@ -1,0 +1,17 @@
+.extcss {
+	background-color: blue;
+	padding: 20px;
+	font-family: "Tahoma";
+	color: white;
+	font-size: x-large;
+	width: 50%;
+	text-align: center;
+	margin-left: 25%;
+}
+
+#here {
+	background-color: tomato;
+	font-family: Verdana;
+	padding: 10px;
+	text-align: center;
+}

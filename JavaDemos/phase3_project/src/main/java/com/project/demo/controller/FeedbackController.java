@@ -41,7 +41,7 @@ public class FeedbackController {
 	@PutMapping("/feedback")
 	public ResponseEntity<Feedback> updateFeedback(@RequestBody Feedback feedback) {
 		try {
-			return new ResponseEntity<Feedback>(service.createFeedback(feedback), HttpStatus.OK); 
+			return new ResponseEntity<Feedback>(service.updateFeedback(feedback), HttpStatus.OK); 
 		} catch (BusinessException e) {
 			map = new LinkedMultiValueMap<>();
 			map.add("message", e.getMessage());
