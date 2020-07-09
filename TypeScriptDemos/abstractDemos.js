@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var requirement_1 = require("./requirement");
+var interfaceDemo_1 = require("./interfaceDemo");
+var i = new requirement_1.Implementor();
+i.display();
+i.reqruirement1();
+var i2 = new interfaceDemo_1.MyImplementor();
+i2.requirement1();
+i2.requirement2();
+i2.requirement3();
