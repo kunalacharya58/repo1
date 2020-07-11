@@ -1,3 +1,57 @@
-<p>hello works!</p>
+<div>
+	<h3>List of Players</h3>
+	<table border="1">
+		<caption>Player Details</caption>
+		<tr>
+			<th>Player</th>
+			<th>Player ID</th>
+			<th>Player Name</th>
+			<th>Player Age</th>
+			<th>Player Team</th>
+		</tr> 
+		<tr *ngFor="let player of players">
+			<td><img height="100px" width="100px" [src]="player.avatar" /></td>
+			<td>{{ player.id }}</td>
+			<td>{{ player.name }}</td>
+			<td>{{ player.age }}</td>
+			<td>{{ player.teamName }}</td>
+		</tr>
+	</table>
 
-<div>{{ title }}</div>
+	<div style="float:right; margin-top: -60px; text-align: center;">
+		<table border="1">
+			<caption>Add Player</caption>
+			<tr>
+				<td>Player ID:</td>
+				<td><input type="text" [(ngModel)]="playerModel.id" name="" id=""></td>
+			</tr>
+			<tr>
+				<td>Player Name:</td>
+				<td><input type="text" [(ngModel)]="playerModel.name" name="" id=""></td>
+			</tr>
+			<tr>
+				<td>Player Age:</td>
+				<td><input type="text" [(ngModel)]="playerModel.age" name="" id=""></td>
+			</tr>
+			<tr>
+				<td>Player Team:</td>
+				<td><input type="text" [(ngModel)]="playerModel.teamName" name="" id=""></td>
+			</tr>
+			<tr>
+				<td>Player Avatar:</td>
+				<td><input type="text" [(ngModel)]="playerModel.avatar" name="" id=""></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button (click)="createPlayer()" >Add Player</button>
+				</td>
+			</tr>
+		</table>
+		<button (click)='removeLastPlayer()'>Remove Last Player</button>
+		<br>
+		Remove By ID:
+		<input type="text" name="" [(ngModel)]="idModel" id="">
+		<br>
+		<button (click)='removeById()'>Remove Player</button>
+	</div>
+</div>

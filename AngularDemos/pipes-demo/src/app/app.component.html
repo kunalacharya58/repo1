@@ -1,0 +1,17 @@
+<div>
+  <h2>Demo on {{ title }}</h2>
+  <h2>Demo on {{ title | uppercase }}</h2>
+  <h2>Demo on {{ title | lowercase }}</h2>
+  <h2>Currency : {{ 70000 | currency:"USD" }}</h2>
+  <h2>Currency : {{ 420.69 | currency:"INR" }}</h2>
+  <h2>Date: {{ myDate }}</h2>
+  <h2>Date: {{ myDate | date : 'd/MMMM/y E hh:mm:ss'}}</h2>
+  <h3>JSON {{ player }}</h3>
+  <h3>JSON {{ player | json }}</h3>
+  <h2>Percent 0.5567 : {{ 0.5567 | percent }}</h2>
+  <h3>Slice Pipe : {{ fruits }}</h3>
+  <h3>Slice Pipe [2:5] : {{ fruits | slice:2:5 }}</h3>
+  <h2>Square Root Custom Pipe : {{ 256 | sqrt }}</h2>
+  <h2>Square Root Custom Pipe : {{ 625 | sqrt }}</h2>
+  <h2>Full Name Custom Pipe2 : {{ fname | fullName: lname }}</h2>
+</div>
