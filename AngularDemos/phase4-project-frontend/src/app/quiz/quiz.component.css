@@ -4,12 +4,12 @@
 }
 
 .quiz-page {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .quiz-page-title {
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .question-box {
@@ -33,3 +33,11 @@
 	margin-bottom: 30px;
 	text-align: center;
 }
+/* 
+Instructions needed at the Quiz page below title.
+change the Welcome jumbotron to heading.
+Mark not attempted a bit lighter shade of gray.
+Adjust bottom margin for jumbotron.
+check margin top css for Retake Quiz btn.
+set latest attempt in Previous Attempts table as active.
+recreate the footer */

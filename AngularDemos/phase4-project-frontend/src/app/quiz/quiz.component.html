@@ -9,13 +9,24 @@
       <li class="list-group-item">
         <h5>Check Results</h5>
       </li>
-    </ul>
+	</ul>
 </div>
-<hr>
 <div class="quiz-page">
 	<div class="quiz-page-title">
 		<h3>Quiz Time!</h3>
 	</div>
+	<div class="card bg-light border-dark mb-3">
+		<div class="card-body">
+		  <h5 class="card-title">Instructions: </h5>
+		  <ul>
+			  <li class="card-text">Close all programs, including email.</li>
+			  <li class="card-text">Make sure that pop-ups and notifications are turned off in the Settings.</li>
+			  <li class="card-text">The student may not use his or her textbook, course notes, or receive help from a proctor or any other outside source.</li>
+			  <li class="card-text">Once submitted, you cannot change your response, be careful and check you responses before submitting!</li>
+			  <li class="card-text"></li>
+		  </ul>
+		</div>
+	  </div>
 
 	<div *ngFor = "let question of questions">
 		<div class="question-box border rounded-lg shadow-sm bg-white">

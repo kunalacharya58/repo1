@@ -7,11 +7,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    .banner {
+      text-align: center;
+      padding: 50px;
+      background-color: rgb(38, 74, 116);
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .my-footer {
+      background-color: lightgray;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <app-root></app-root>
+  <div class="banner">
+    <div class="container center">
+      <p class="h1">Online Test Application</p>
+    </div>
   </div>
+
+  <app-root></app-root>
+  
+  <footer class="jumbotron my-footer">
+    <div class="container">
+      <p class="lead">Thank you for using our application!</p>
+    </div>
+  </footer>
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
