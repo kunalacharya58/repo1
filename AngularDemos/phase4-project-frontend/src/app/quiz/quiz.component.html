@@ -1,0 +1,59 @@
+<div class="main-page">
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item active">
+        <h5>Take Your Test</h5>
+      </li>
+      <li class="list-group-item">
+        <h5>Review Answers</h5>
+      </li>
+      <li class="list-group-item">
+        <h5>Check Results</h5>
+      </li>
+    </ul>
+</div>
+<hr>
+<div class="quiz-page">
+	<div class="quiz-page-title">
+		<h3>Quiz Time!</h3>
+	</div>
+
+	<div *ngFor = "let question of questions">
+		<div class="question-box border rounded-lg shadow-sm bg-white">
+			<div class="question-text rounded-top">Q{{ question.id }}. {{ question.question }}</div>
+			<ul class="list-group list-hover">
+				<li class="list-group list-group-item">
+					<input type="radio" [name]="question.id" [id]="question.id+'1'" 
+					[(ngModel)]="question.response" [value]="question.opt1" required/>
+					<label [for]="question.id+'1'">
+						<span class="option">{{ question.opt1 }}</span>
+					</label>
+				</li>
+				<li class="list-group list-group-item">
+					<input type="radio" [name]="question.id" [id]="question.id+'2'" 
+					[(ngModel)]="question.response" [value]="question.opt2" />
+					<label [for]="question.id+'2'">
+						<span class="option">{{ question.opt2 }}</span>
+					</label>
+				</li>
+				<li class="list-group list-group-item">
+					<input type="radio" [name]="question.id" [id]="question.id+'3'" 
+					[(ngModel)]="question.response" [value]="question.opt3" />
+					<label [for]="question.id+'3'">
+						<span class="option">{{ question.opt3 }}</span>
+					</label>
+				</li>
+				<li class="list-group list-group-item">
+					<input type="radio" [name]="question.id" [id]="question.id+'4'" 
+					[(ngModel)]="question.response" [value]="question.opt4" />
+					<label [for]="question.id+'4'">
+						<span class="option">{{ question.opt4 }}</span>
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="submit-button-holder">
+		<button (click)="collectResponses()" class="btn btn-lg btn-success" type="submit">I'm Done, Submit My Response</button>
+	</div>
+</div>

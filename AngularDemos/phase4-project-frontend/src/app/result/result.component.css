@@ -1,0 +1,19 @@
+.list-group-horizontal .list-group-item {
+	width: 33.33%;
+	text-align: center;
+}
+
+.result-page {
+	margin-top: 10px;
+}
+
+.result-page-title {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+.button-holder {
+	text-align: center;
+	margin-bottom: 30px;
+}

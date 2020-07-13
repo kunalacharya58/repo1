@@ -1,0 +1,22 @@
+.list-group-horizontal .list-group-item {
+	width: 33.33%;
+	text-align: center;
+}
+
+.review-page {
+	margin-top: 10px;
+}
+
+.review-page-title {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.NA {
+	color: grey;
+}
+
+.button-holder {
+	text-align: center;
+	margin-bottom: 30px;
+}

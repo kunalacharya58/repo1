@@ -1,0 +1,114 @@
+<div class="main-page">
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item">
+        <h5>Take Your Test</h5>
+      </li>
+      <li class="list-group-item">
+        <h5>Review Answers</h5>
+      </li>
+      <li class="list-group-item active">
+        <h5>Check Results</h5>
+      </li>
+    </ul>
+</div>
+<hr>
+<div class="result-page">
+	<div class="result-page-title">
+      <ng-container *ngIf="score>=60; then titlePass; else titleFail"></ng-container>
+      <ng-template #titlePass>
+        <div class="alert alert-success" role="alert">
+          <h3 class="alert-heading">Congratulations!</h3>
+          <p>You Scored: <strong>{{ score }}%</strong></p>
+        </div>
+      </ng-template>
+      <ng-template #titleFail>
+        <div class="alert alert-danger" role="alert">
+          <h3 class="alert-heading">Unsuccessfull!</h3>
+          <p>You Scored: <strong>{{ score }}%</strong></p>
+        </div>
+      </ng-template>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-borderless table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>Q</th>
+          <th>Question</th>
+          <th>Your Choice</th>
+          <th>Correct Option</th>
+        </tr>
+      </thead>
+      <tbody  *ngFor = "let response of responses">
+        <ng-container
+          *ngIf="!response.response; then nullResponse; else checkRightWrong">
+        </ng-container>
+        <ng-template #nullResponse>
+          <tr>
+            <td>{{ response.qid }}</td>
+            <td>{{ response.question }}</td>
+            <td>Not Attempted</td>
+            <td>{{ response.answer }}</td>
+          </tr>
+        </ng-template>
+        <ng-template #checkRightWrong>
+          <ng-container
+            *ngIf="response.response == response.answer; then rightResponse; else wrongResponse">
+          </ng-container>
+          <ng-template #rightResponse>
+            <tr class="table-success">
+              <td>{{ response.qid }}</td>
+              <td>{{ response.question }}</td>
+              <td>{{ response.response }}</td>
+              <td>{{ response.answer }}</td>
+            </tr>
+          </ng-template>
+          <ng-template #wrongResponse>
+            <tr class="table-danger">
+              <td>{{ response.qid }}</td>
+              <td>{{ response.question }}</td>
+              <td>{{ response.response }}</td>
+              <td>{{ response.answer }}</td>
+            </tr>
+          </ng-template>
+        </ng-template>
+      </tbody>
+    </table>
+  </div>
+	<div class="result-page">
+    <div class="result-page-title">
+      <h3>Previous Attempts</h3>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-bordered table-sm table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th>Attempt</th>
+            <th>Total Questions</th>
+            <th>Answered Correctly</th>
+            <th>Wrong Answers</th>
+            <th>Not Attempted</th>
+            <th>Percentage Obtained</th>
+            <th>Pass/Fail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let result of results">
+            <td>{{ result.id }}</td>
+            <td>{{ result.total }}</td>
+            <td>{{ result.correct }}</td>
+            <td>{{ result.incorrect }}</td>
+            <td>{{ result.total - (result.correct + result.incorrect) }}</td>
+            <td>{{ result.correct/result.total | percent }}</td>
+            <td class="table-success" *ngIf = "100*result.correct/result.total>=60; else elseBlock">PASS</td>
+            <ng-template #elseBlock>
+              <td class="table-danger">FAIL</td>
+            </ng-template>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="button-holder">
+		<button (click)="gotoQuiz()" class="btn btn-lg btn-primary">Retake Quiz</button>
+	</div>
+</div>
