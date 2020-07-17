@@ -11,7 +11,6 @@
       </li>
     </ul>
 </div>
-<hr>
 <div class="result-page">
 	<div class="result-page-title">
       <ng-container *ngIf="score>=60; then titlePass; else titleFail"></ng-container>
@@ -23,8 +22,8 @@
       </ng-template>
       <ng-template #titleFail>
         <div class="alert alert-danger" role="alert">
-          <h3 class="alert-heading">Unsuccessfull!</h3>
-          <p>You Scored: <strong>{{ score }}%</strong></p>
+          <h3 class="alert-heading">Unsuccessful!</h3>
+          <p>You Scored: <strong>{{ score }}%</strong>&nbsp; (Criteria to clear the test is 60% or more)</p>
         </div>
       </ng-template>
   </div>
@@ -46,7 +45,7 @@
           <tr>
             <td>{{ response.qid }}</td>
             <td>{{ response.question }}</td>
-            <td>Not Attempted</td>
+            <td class="NA">Not Attempted</td>
             <td>{{ response.answer }}</td>
           </tr>
         </ng-template>
@@ -58,7 +57,7 @@
             <tr class="table-success">
               <td>{{ response.qid }}</td>
               <td>{{ response.question }}</td>
-              <td>{{ response.response }}</td>
+              <td>{{ response.response }}  &#9989;</td>
               <td>{{ response.answer }}</td>
             </tr>
           </ng-template>
@@ -66,7 +65,7 @@
             <tr class="table-danger">
               <td>{{ response.qid }}</td>
               <td>{{ response.question }}</td>
-              <td>{{ response.response }}</td>
+              <td>{{ response.response }} &#10060;</td>
               <td>{{ response.answer }}</td>
             </tr>
           </ng-template>
@@ -109,6 +108,6 @@
     </div>
   </div>
   <div class="button-holder">
-		<button (click)="gotoQuiz()" class="btn btn-lg btn-primary">Retake Quiz</button>
+		<button (click)="gotoQuiz()" class="btn btn-lg btn-outline-primary">Retake Quiz</button>
 	</div>
 </div>

@@ -15,15 +15,15 @@
 	<div class="quiz-page-title">
 		<h3>Quiz Time!</h3>
 	</div>
-	<div class="card bg-light border-dark mb-3">
+	<div class="card bg-light border-dark mb-4">
 		<div class="card-body">
 		  <h5 class="card-title">Instructions: </h5>
 		  <ul>
 			  <li class="card-text">Close all programs, including email.</li>
-			  <li class="card-text">Make sure that pop-ups and notifications are turned off in the Settings.</li>
-			  <li class="card-text">The student may not use his or her textbook, course notes, or receive help from a proctor or any other outside source.</li>
+			  <li class="card-text">Make sure the pop-ups and notifications are turned off in the Settings.</li>
+			  <li class="card-text">Student may not use his or her textbook, course notes, or receive help from a proctor or any other outside source.</li>
+			  <li class="card-text">You cannot switch to other tabs or programs while appearing for the test.</li>
 			  <li class="card-text">Once submitted, you cannot change your response, be careful and check you responses before submitting!</li>
-			  <li class="card-text"></li>
 		  </ul>
 		</div>
 	  </div>
@@ -31,40 +31,44 @@
 	<div *ngFor = "let question of questions">
 		<div class="question-box border rounded-lg shadow-sm bg-white">
 			<div class="question-text rounded-top">Q{{ question.id }}. {{ question.question }}</div>
-			<ul class="list-group list-hover">
-				<li class="list-group list-group-item">
-					<input type="radio" [name]="question.id" [id]="question.id+'1'" 
-					[(ngModel)]="question.response" [value]="question.opt1" required/>
-					<label [for]="question.id+'1'">
-						<span class="option">{{ question.opt1 }}</span>
-					</label>
-				</li>
-				<li class="list-group list-group-item">
-					<input type="radio" [name]="question.id" [id]="question.id+'2'" 
-					[(ngModel)]="question.response" [value]="question.opt2" />
-					<label [for]="question.id+'2'">
-						<span class="option">{{ question.opt2 }}</span>
-					</label>
-				</li>
-				<li class="list-group list-group-item">
-					<input type="radio" [name]="question.id" [id]="question.id+'3'" 
-					[(ngModel)]="question.response" [value]="question.opt3" />
-					<label [for]="question.id+'3'">
-						<span class="option">{{ question.opt3 }}</span>
-					</label>
-				</li>
-				<li class="list-group list-group-item">
-					<input type="radio" [name]="question.id" [id]="question.id+'4'" 
-					[(ngModel)]="question.response" [value]="question.opt4" />
-					<label [for]="question.id+'4'">
-						<span class="option">{{ question.opt4 }}</span>
-					</label>
-				</li>
-			</ul>
+			<div class="container">
+				<div class="row">
+					<div class="col option-box">
+						<input type="radio" [name]="question.id" [id]="question.id+'1'" 
+						[(ngModel)]="question.response" [value]="question.opt1" required/>
+						<label [for]="question.id+'1'">
+							<span class="option">{{ question.opt1 }}</span>
+						</label>
+					</div>
+					<div class="col option-box">
+						<input type="radio" [name]="question.id" [id]="question.id+'2'" 
+						[(ngModel)]="question.response" [value]="question.opt2" />
+						<label [for]="question.id+'2'">
+							<span class="option">{{ question.opt2 }}</span>
+						</label>				
+					</div>
+				</div>
+				<div class="row">
+					<div class="col option-box">
+						<input type="radio" [name]="question.id" [id]="question.id+'3'" 
+						[(ngModel)]="question.response" [value]="question.opt3" />
+						<label [for]="question.id+'3'">
+							<span class="option">{{ question.opt3 }}</span>
+						</label>
+					</div>
+					<div class="col option-box">
+						<input type="radio" [name]="question.id" [id]="question.id+'4'" 
+						[(ngModel)]="question.response" [value]="question.opt4" />
+						<label [for]="question.id+'4'">
+							<span class="option">{{ question.opt4 }}</span>
+						</label>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<div class="submit-button-holder">
-		<button (click)="collectResponses()" class="btn btn-lg btn-success" type="submit">I'm Done, Submit My Response</button>
+		<button (click)="collectResponses()" class="btn btn-lg btn-outline-success" type="submit">I'm Done, Submit My Response</button>
 	</div>
 </div>

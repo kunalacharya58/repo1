@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Template</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.block {
+			background-color: grey;
+			border: 1px dashed;
+			height: 200px;
+		}
+
+		.navbar {
+			background-color: black;
+			color: white;
+			height: 50px;
+		}
+
+		.footer {
+			background-color: teal;
+			height: 200px;
+		}
+
+		.left {
+			float: left;
+			width: 60%;
+		}
+
+		.right {
+			float: right;
+			width: 40%;
+		}
+
+		.sidemenu {
+			background-color: red;
+		}
+
+		.clearfix {
+			clear: both;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="block">
+		HEADER
+	</div>
+	<div class="block navbar">
+		NAVBAR
+	</div>
+	<div class="content-block left">
+		<div class="block">
+			CONTENT 1
+		</div>
+		<div class="block">
+			CONTENT 2
+		</div>
+		<div class="block">
+			CONTENT 3
+		</div>
+	</div>
+	<div class="right">
+		<div class="block sidemenu">
+			CONTENT 4
+		</div>
+	</div>
+	<div class="block footer clearfix">
+		FOOTER
+	</div>
+</body>
+
+</html>

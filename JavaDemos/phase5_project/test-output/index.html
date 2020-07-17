@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-WebAppAutoTest">
+              <span class="suite-name border-passed">WebAppAutoTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-WebAppAutoTest">
+                    <span>J:\Training\JavaDemos\phase5_project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-WebAppAutoTest">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-WebAppAutoTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-WebAppAutoTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-WebAppAutoTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-WebAppAutoTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-WebAppAutoTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-WebAppAutoTest" class="hide-methods passed suite-WebAppAutoTest"> (hide)</a> <!-- hide-methods passed suite-WebAppAutoTest -->
+                      <a href="#" panel-name="suite-WebAppAutoTest" class="show-methods passed suite-WebAppAutoTest"> (show)</a> <!-- show-methods passed suite-WebAppAutoTest -->
+                    </span>
+                    <div class="method-list-content passed suite-WebAppAutoTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WebAppAutoTest" title="com.project.test.AddToCartTest" hash-for-method="addToCart">addToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WebAppAutoTest" title="com.project.test.LoginTest" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WebAppAutoTest" title="com.project.test.RegisterTest" hash-for-method="register">register</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WebAppAutoTest" title="com.project.test.SearchTest" hash-for-method="searchProduct">searchProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-WebAppAutoTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-WebAppAutoTest" class="panel WebAppAutoTest">
+          <div class="suite-WebAppAutoTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.test.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="register">
+                  </a> <!-- register -->
+                  <span class="method-name">register</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WebAppAutoTest-class-passed -->
+          <div class="suite-WebAppAutoTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.test.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WebAppAutoTest-class-passed -->
+          <div class="suite-WebAppAutoTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.test.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct">
+                  </a> <!-- searchProduct -->
+                  <span class="method-name">searchProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WebAppAutoTest-class-passed -->
+          <div class="suite-WebAppAutoTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.project.test.AddToCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCart">
+                  </a> <!-- addToCart -->
+                  <span class="method-name">addToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WebAppAutoTest-class-passed -->
+        </div> <!-- panel WebAppAutoTest -->
+        <div panel-name="test-xml-WebAppAutoTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">J:\Training\JavaDemos\phase5_project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;WebAppAutoTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test-Register&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.project.test.RegisterTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test-Register --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test-Login&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.project.test.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test-Login --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test-Search&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.project.test.SearchTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test-Search --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test-AddToCart&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.project.test.AddToCartTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test-AddToCart --&gt;
+&lt;/suite&gt; &lt;!-- WebAppAutoTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-WebAppAutoTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for WebAppAutoTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test-Register (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test-Login (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test-Search (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test-AddToCart (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-WebAppAutoTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for WebAppAutoTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-WebAppAutoTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for WebAppAutoTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_WebAppAutoTest');
+function tableData_WebAppAutoTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'register')
+data.setCell(0, 2, 'com.project.test.RegisterTest')
+data.setCell(0, 3, 36300);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addToCart')
+data.setCell(1, 2, 'com.project.test.AddToCartTest')
+data.setCell(1, 3, 30652);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchProduct')
+data.setCell(2, 2, 'com.project.test.SearchTest')
+data.setCell(2, 3, 24789);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'login')
+data.setCell(3, 2, 'com.project.test.LoginTest')
+data.setCell(3, 3, 16723);
+window.suiteTableData['WebAppAutoTest']= { tableData: data, tableDiv: 'times-div-WebAppAutoTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-WebAppAutoTest">
+              </div> <!-- times-div-WebAppAutoTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-WebAppAutoTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for WebAppAutoTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">register</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Navigating to authentication page.</span>
+                <span class="reporter-method-output">Filling up registration form.</span>
+                <span class="reporter-method-output">Registration form submitted!</span>
+                <span class="reporter-method-output">Successfully registered to the site.</span>
+                <span class="reporter-method-output">Signed out successfully!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">login</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Navigating to authentication page.</span>
+                <span class="reporter-method-output">Attempting to log in.</span>
+                <span class="reporter-method-output">Log in was successful!</span>
+                <span class="reporter-method-output">Signed out successfully!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchProduct</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Navigating to log in page.</span>
+                <span class="reporter-method-output">Attempting to log in.</span>
+                <span class="reporter-method-output">Log in was successful!</span>
+                <span class="reporter-method-output">Searching for a product 'shirt'...</span>
+                <span class="reporter-method-output">Matching products received!</span>
+                <span class="reporter-method-output">Signed out successfully!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addToCart</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Navigating to log in page.</span>
+                <span class="reporter-method-output">Attempting to log in.</span>
+                <span class="reporter-method-output">Log in was successful!</span>
+                <span class="reporter-method-output">Searching for a product 'shirt'...</span>
+                <span class="reporter-method-output">Selecting a product.</span>
+                <span class="reporter-method-output">Adding product to the Cart...</span>
+                <span class="reporter-method-output">Product added to cart successfully!</span>
+                <span class="reporter-method-output">Signed out successfully!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-WebAppAutoTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-WebAppAutoTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.test.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">register</span>
+                <span class="method-start">7488 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">43797 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.test.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">44019 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">49739 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">66466 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.test.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">66610 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">searchProduct</span>
+                <span class="method-start">72303 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">97097 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.project.test.AddToCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">97368 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">addToCart</span>
+                <span class="method-start">102917 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">133574 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

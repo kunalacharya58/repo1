@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebAppAutoTest">
+  <test name="Test-Register">
+    <classes>
+      <class name="com.project.test.RegisterTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test-Login">
+    <classes>
+      <class name="com.project.test.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test-Search">
+    <classes>
+      <class name="com.project.test.SearchTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test-AddToCart">
+    <classes>
+      <class name="com.project.test.AddToCartTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

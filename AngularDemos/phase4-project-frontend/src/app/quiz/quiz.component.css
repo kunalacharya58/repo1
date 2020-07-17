@@ -13,10 +13,18 @@
 }
 
 .question-box {
-	/* border: 1px solid; */
 	color: black;
-	margin-bottom: 30px;
+	margin: auto;
 	font-size: large;
+	margin-bottom: 4vw;
+	width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+	.question-box {
+		width: 100%;
+
+	}
 }
 
 .question-text {
@@ -29,15 +37,21 @@
 	margin-left: 10px;
 }
 
+.option-box {
+	padding: 10px;
+	padding-left: 50px;
+	padding-right:50px;
+}
+
+.option-box > label :hover {
+	text-shadow: 0 0 5px palegreen;
+	transition-duration: 0.2s;
+}
+
 .submit-button-holder {
 	margin-bottom: 30px;
 	text-align: center;
 }
 /* 
-Instructions needed at the Quiz page below title.
-change the Welcome jumbotron to heading.
-Mark not attempted a bit lighter shade of gray.
-Adjust bottom margin for jumbotron.
-check margin top css for Retake Quiz btn.
 set latest attempt in Previous Attempts table as active.
-recreate the footer */
+ */
