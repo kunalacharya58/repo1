@@ -71,16 +71,16 @@
       <![CDATA[Signed out successfully!]]>
     </line>
   </reporter-output>
-  <suite name="WebAppAutoTest" duration-ms="133805" started-at="2020-07-17T11:02:09Z" finished-at="2020-07-17T11:04:22Z">
+  <suite name="WebAppAutoTest" duration-ms="104143" started-at="2020-07-17T14:15:14Z" finished-at="2020-07-17T14:16:58Z">
     <groups>
     </groups>
-    <test name="Test-Register" duration-ms="43977" started-at="2020-07-17T11:02:09Z" finished-at="2020-07-17T11:02:53Z">
+    <test name="Test-Register" duration-ms="31025" started-at="2020-07-17T14:15:14Z" finished-at="2020-07-17T14:15:45Z">
       <class name="com.project.test.RegisterTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.project.test.RegisterTest@69ea3742]" name="openBrowser" is-config="true" duration-ms="7458" started-at="2020-07-17T11:02:09Z" finished-at="2020-07-17T11:02:16Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.project.test.RegisterTest@69ea3742]" name="openBrowser" is-config="true" duration-ms="6538" started-at="2020-07-17T14:15:14Z" finished-at="2020-07-17T14:15:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="register()[pri:0, instance:com.project.test.RegisterTest@69ea3742]" name="register" duration-ms="36300" started-at="2020-07-17T11:02:16Z" finished-at="2020-07-17T11:02:52Z">
+        <test-method status="PASS" signature="register()[pri:0, instance:com.project.test.RegisterTest@69ea3742]" name="register" duration-ms="24379" started-at="2020-07-17T14:15:21Z" finished-at="2020-07-17T14:15:45Z">
           <reporter-output>
             <line>
               <![CDATA[Navigating to authentication page.]]>
@@ -99,19 +99,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.test.RegisterTest@69ea3742]" name="tearDown" is-config="true" duration-ms="177" started-at="2020-07-17T11:02:52Z" finished-at="2020-07-17T11:02:53Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.test.RegisterTest@69ea3742]" name="tearDown" is-config="true" duration-ms="88" started-at="2020-07-17T14:15:45Z" finished-at="2020-07-17T14:15:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.project.test.RegisterTest -->
     </test> <!-- Test-Register -->
-    <test name="Test-Login" duration-ms="22582" started-at="2020-07-17T11:02:53Z" finished-at="2020-07-17T11:03:15Z">
+    <test name="Test-Login" duration-ms="20678" started-at="2020-07-17T14:15:45Z" finished-at="2020-07-17T14:16:06Z">
       <class name="com.project.test.LoginTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.project.test.LoginTest@20398b7c]" name="openBrowser" is-config="true" duration-ms="5718" started-at="2020-07-17T11:02:53Z" finished-at="2020-07-17T11:02:58Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.project.test.LoginTest@20398b7c]" name="openBrowser" is-config="true" duration-ms="5239" started-at="2020-07-17T14:15:45Z" finished-at="2020-07-17T14:15:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.project.test.LoginTest@20398b7c]" name="login" duration-ms="16723" started-at="2020-07-17T11:02:58Z" finished-at="2020-07-17T11:03:15Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.project.test.LoginTest@20398b7c]" name="login" duration-ms="15350" started-at="2020-07-17T14:15:50Z" finished-at="2020-07-17T14:16:06Z">
           <reporter-output>
             <line>
               <![CDATA[Navigating to authentication page.]]>
@@ -127,19 +127,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.test.LoginTest@20398b7c]" name="tearDown" is-config="true" duration-ms="134" started-at="2020-07-17T11:03:15Z" finished-at="2020-07-17T11:03:15Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.test.LoginTest@20398b7c]" name="tearDown" is-config="true" duration-ms="84" started-at="2020-07-17T14:16:06Z" finished-at="2020-07-17T14:16:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.project.test.LoginTest -->
     </test> <!-- Test-Login -->
-    <test name="Test-Search" duration-ms="30731" started-at="2020-07-17T11:03:15Z" finished-at="2020-07-17T11:03:46Z">
+    <test name="Test-Search" duration-ms="23529" started-at="2020-07-17T14:16:06Z" finished-at="2020-07-17T14:16:29Z">
       <class name="com.project.test.SearchTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.project.test.SearchTest@527740a2]" name="openBrowser" is-config="true" duration-ms="5692" started-at="2020-07-17T11:03:15Z" finished-at="2020-07-17T11:03:21Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.project.test.SearchTest@527740a2]" name="openBrowser" is-config="true" duration-ms="6965" started-at="2020-07-17T14:16:06Z" finished-at="2020-07-17T14:16:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="searchProduct()[pri:0, instance:com.project.test.SearchTest@527740a2]" name="searchProduct" duration-ms="24789" started-at="2020-07-17T11:03:21Z" finished-at="2020-07-17T11:03:46Z">
+        <test-method status="PASS" signature="searchProduct()[pri:0, instance:com.project.test.SearchTest@527740a2]" name="searchProduct" duration-ms="16479" started-at="2020-07-17T14:16:13Z" finished-at="2020-07-17T14:16:29Z">
           <reporter-output>
             <line>
               <![CDATA[Navigating to log in page.]]>
@@ -161,19 +161,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- searchProduct -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.test.SearchTest@527740a2]" name="tearDown" is-config="true" duration-ms="241" started-at="2020-07-17T11:03:46Z" finished-at="2020-07-17T11:03:46Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.test.SearchTest@527740a2]" name="tearDown" is-config="true" duration-ms="82" started-at="2020-07-17T14:16:29Z" finished-at="2020-07-17T14:16:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.project.test.SearchTest -->
     </test> <!-- Test-Search -->
-    <test name="Test-AddToCart" duration-ms="36452" started-at="2020-07-17T11:03:46Z" finished-at="2020-07-17T11:04:22Z">
+    <test name="Test-AddToCart" duration-ms="28860" started-at="2020-07-17T14:16:29Z" finished-at="2020-07-17T14:16:58Z">
       <class name="com.project.test.AddToCartTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.project.test.AddToCartTest@520a3426]" name="openBrowser" is-config="true" duration-ms="5548" started-at="2020-07-17T11:03:46Z" finished-at="2020-07-17T11:03:51Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.project.test.AddToCartTest@520a3426]" name="openBrowser" is-config="true" duration-ms="5219" started-at="2020-07-17T14:16:29Z" finished-at="2020-07-17T14:16:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="addToCart()[pri:0, instance:com.project.test.AddToCartTest@520a3426]" name="addToCart" duration-ms="30652" started-at="2020-07-17T11:03:51Z" finished-at="2020-07-17T11:04:22Z">
+        <test-method status="PASS" signature="addToCart()[pri:0, instance:com.project.test.AddToCartTest@520a3426]" name="addToCart" duration-ms="23543" started-at="2020-07-17T14:16:35Z" finished-at="2020-07-17T14:16:58Z">
           <reporter-output>
             <line>
               <![CDATA[Navigating to log in page.]]>
@@ -201,7 +201,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.test.AddToCartTest@520a3426]" name="tearDown" is-config="true" duration-ms="228" started-at="2020-07-17T11:04:22Z" finished-at="2020-07-17T11:04:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.test.AddToCartTest@520a3426]" name="tearDown" is-config="true" duration-ms="73" started-at="2020-07-17T14:16:58Z" finished-at="2020-07-17T14:16:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
