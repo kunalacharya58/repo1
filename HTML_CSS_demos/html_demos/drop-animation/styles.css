@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	overflow: hidden;
+	background-color: whitesmoke;
+}
+.droplet {
+	width: 30px;
+	position: absolute;
+	left: 50%;
+	bottom: 100vh;
+	animation: gravity 1s linear;
+}
+.droplet img {
+	width: 100%;
+}
+@keyframes gravity {
+	from {
+		top: 0%;
+	} to {
+		top: 100%;
+	}
+}

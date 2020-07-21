@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-color: rgb(199, 199, 199);
+}
+
+body::-webkit-scrollbar {
+	width: 1px;
+	background: rgb(51, 51, 51);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: rgb(255, 123, 0);
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	min-height: 10vh;
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+	background-color: rgb(27, 27, 27);
+	box-shadow: 0 0 10px;
+	margin-bottom: 2vh;
+}
+
+.logo {
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+	cursor: pointer;
+}
+
+.hub {
+	background-color: rgb(255, 123, 0);
+	color: black;
+	font-weight: bolder;
+	padding: 0 5px;
+	border-radius: 6px;
+	margin: 0 2px;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav-links li {
+	margin: 0 10px;
+	list-style: none;
+}
+
+.nav-links a {
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	color: white;
+}
+
+.nav-links a:hover {
+	color: rgb(255, 123, 0);
+}
+
+.login a {
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 6px;
+	font-size: 10px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: white;
+	background: black;
+}
+
+.login :hover {
+	color: black;
+	background: rgb(255, 123, 0);
+	font-weight: bold;
+}
+
+.burger {
+	border-radius: 4px;
+	margin-right: 10%;
+	cursor: pointer;
+	display: none;
+}
+
+.burger div {
+	width: 10px;
+	height: 2px;
+	margin: 2px;
+	background: white;
+}
+
+.body {
+	font-size: 12px;
+	margin: 0 20%;
+}
+
+.footer {
+	min-height: 20vh;
+	margin: 50px 0 0 0;
+	font-size: 12px;
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-row {
+	flex: 1;
+	margin: 20px 20%;
+	display: flex;
+}
+
+.footer-col {
+	flex: 1;
+}
