@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Sidebar</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-size: 50px;
+			font-family: tahoma;
+		}
+		.parent {
+			height: 100vh;
+			width: 100%;
+			display: grid;
+			grid-template-columns: minmax(400px, 25%) 1fr;
+		}
+		.sidebar {
+			padding: 50px;
+			background-color: lightgreen;
+		}
+		.content {
+			padding: 50px;
+			background-color: lightpink;
+		}
+		@media screen and (max-width: 1200px) {
+			.sidebar {
+				background-color: orange;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="sidebar">
+			This is my sidebar element
+		</div>
+		<div class="content">
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+			Iste sed impedit temporibus ea vel! Quisquam nihil dicta
+			consequatur qui tenetur aperiam distinctio, eos cupiditate
+			minus! Necessitatibus cum voluptatem porro eveniet!
+		</div>
+	</div>
+</body>
+</html>

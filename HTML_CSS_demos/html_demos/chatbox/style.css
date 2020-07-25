@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.chatbox-btn {
+	position: fixed;
+	right: 30px; bottom: 30px;
+	background-color: rgb(36, 168, 91);
+	padding: 10px;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	box-shadow: 0 0 40px rgba(0,0,0,0.1);
+	cursor: pointer;
+}
+
+.chatbox-btn img {
+	width: 70%;
+	filter: invert(100%);
+}
+
+.chatbox {
+	position: fixed;
+	right: 30px;
+	bottom: 110px;
+	transform: translateX(120%);
+	transition: transform 0.3s;
+	z-index: 1;
+}
+
+.chatbox-show {
+	transform: translateX(0%);
+}
+
+.chatbox-body {
+	background-color: white;
+	height: 600px;
+	width: 400px;
+	border-radius: 20px;
+	border: 1px solid lightgrey;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+
+.chatbox-title {
+	padding: 10px 20px;
+}
+
+.chatbox-window {
+	flex: 1;
+	background-color: rgb(240, 240, 240);
+	margin: 10px;
+	border-radius: 12px;
+	padding: 10px 10px;
+	text-align: right;
+}
+
+.chats {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.chat {
+	display:inline-block;
+	clear: both;
+	padding: 3px 10px;
+	margin-bottom: 3px;
+	font-size: 13px;
+}
+.him {
+	background: gainsboro;
+	float: left;
+	border-radius: 10px 30px 30px 10px;
+}
+.me {
+	float: right;
+	background: rgb(36, 168, 91);
+	color: white;
+	border-radius: 30px 10px 10px 30px;
+}
+
+.chatbox-form form {
+	margin: 0 10px;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	border-radius: 30px;
+	padding: 5px;
+	background-color: rgb(36, 168, 91);
+}
+
+.chatbox-form-text {
+	flex: 1;
+	border-radius: 30px;
+	border: none;
+	padding: 10px 15px;
+	outline: none;
+}
+
+.chatbox-form-text::placeholder {
+	color: lightgrey;
+}
+
+.chatbox-form-send {
+	width: 10%;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	border: none;
+	background-color: rgb(36, 168, 91);
+	outline: none;
+}
+
+.chatbox-form-send img {
+	width: 60%;
+	filter: invert(100%);
+}
+
+.history-box {
+	margin: 10px;
+}

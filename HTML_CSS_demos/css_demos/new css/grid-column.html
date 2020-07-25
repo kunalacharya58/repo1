@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grid Columns</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-size: 30px;
+			font-family: tahoma;
+			text-align: center;
+		}
+		.parent {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			height: 100vh;
+		}
+		.parent div {
+			padding: 20px;
+		}
+		.span-12 {
+			background-color: lightsteelblue;
+			grid-column: 1 / 13;
+		}
+		.span-6 {
+			background-color: sandybrown;
+			grid-column: 6 / 12;
+		}
+		.span-4 {
+			background-color: lightgreen;
+			grid-column: 2 / 6;
+		}
+		.span-2 {
+			background-color: salmon;
+			grid-column: 5 / 7;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="span-12">Span 12</div>
+		<div class="span-6">Span 6</div>
+		<div class="span-4">Span 4</div>
+		<div class="span-2">Span 2</div>
+	</div>
+</body>
+</html>

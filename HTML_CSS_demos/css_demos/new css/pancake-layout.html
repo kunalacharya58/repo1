@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Basic Layout</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: tahoma;
+			font-size: 50px;
+		}
+		body {
+			display: grid;
+			grid-template-rows: auto 1fr auto;
+			height: 100vh;
+		}
+		header, main, footer {
+			padding: 40px;
+		}
+		header {
+			background-color: lightskyblue;
+		}
+		main {
+			background-color: salmon;
+		}
+		footer {
+			background-color: lightgreen;
+		}
+	</style>
+</head>
+<body>
+	<header contenteditable>Header</header>
+	<main contenteditable>Main Content</main>
+	<footer contenteditable>Footer</footer>
+</body>
+</html>

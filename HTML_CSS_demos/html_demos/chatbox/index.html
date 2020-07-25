@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+	<title>Chatbox</title>
+</head>
+
+<body>
+	<div class="chatbox">
+		<div class="chatbox-body">
+			<div class="chatbox-title">
+				<h3>Ask me a question!</h3>
+			</div>
+			<div class="chatbox-window">
+				<ul class="chats">
+				</ul>
+			</div>
+			<div class="chatbox-form">
+				<form onsubmit="return send()">
+					<input type="text" id="message"
+						class="chatbox-form-text"
+						placeholder="Type your query..."
+						autocomplete="off"/>
+					<button type="button" class="chatbox-form-send">
+						<img src="./icons/send-dark.png" alt="Send">
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="chatbox-btn"><img src="./icons/chat-dark.png" alt="Chat"></div>
+
+	<div class="history-box">
+		<h2>Chat History:</h2>
+		<div id="history"></div>
+	</div>
+
+	<script src="./app.js"></script>
+</body>
+
+</html>
