@@ -14,12 +14,12 @@ body {
 	right: 30px; bottom: 30px;
 	background-color: rgb(36, 168, 91);
 	padding: 10px;
-	width: 64px;
-	height: 64px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
 	display: grid;
 	place-items: center;
-	box-shadow: 0 0 40px rgba(0,0,0,0.1);
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
 	cursor: pointer;
 }
 
