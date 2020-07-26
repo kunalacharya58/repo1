@@ -121,6 +121,7 @@ body {
 	border: none;
 	background-color: rgb(36, 168, 91);
 	outline: none;
+	cursor: pointer;
 }
 
 .chatbox-form-send img {

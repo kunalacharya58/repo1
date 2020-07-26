@@ -55,6 +55,11 @@ function send() {
 			let d = new Date();
 			chats += `<li class="him chat">Today's date is ${d.toLocaleDateString()}.</li>`;
 		}
+		if(message.includes('.bye')) {
+			document.querySelector('.chatbox').classList.remove('chatbox-show');
+			chats = '';
+			messages = [];
+		}
 		let reply = response(message);
 		if(reply) {
 			chats += `<li class="him chat">${reply}</li>`;
