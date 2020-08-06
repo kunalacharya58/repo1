@@ -1,4 +1,4 @@
-import {Player} from './player';
+import { Player } from './player';
 import { Coach } from './coach';
 
 export class CricketPlayer extends Player {

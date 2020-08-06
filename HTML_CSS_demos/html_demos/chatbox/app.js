@@ -50,10 +50,12 @@ function send() {
 		if(message.includes('.time')) {
 			let d = new Date();
 			chats += `<li class="him chat">It is ${d.toLocaleTimeString()} right now.</li>`;
+			chatHistory.push({'bot':d.toLocaleTimeString()});
 		}
 		if(message.includes('.date')) {
 			let d = new Date();
 			chats += `<li class="him chat">Today's date is ${d.toLocaleDateString()}.</li>`;
+			chatHistory.push({'bot':d.toLocaleDateString()});
 		}
 		if(message.includes('.bye')) {
 			document.querySelector('.chatbox').classList.remove('chatbox-show');
@@ -63,7 +65,7 @@ function send() {
 		let reply = response(message);
 		if(reply) {
 			chats += `<li class="him chat">${reply}</li>`;
-			chatHistory.push({'bot':message});
+			chatHistory.push({'bot':reply});
 		}
 	});
 	chatWindow.innerHTML = chats;
