@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	perspective: 600px;
+	perspective-origin: 50% 50%;
+
+	display: grid;
+	height: 100vh;
+	place-items: center;
+
+	background-color: black;
+}
+
+.cube {
+	position: relative;
+	height: 200px;
+	width: 200px;
+
+	transform-style: preserve-3d;
+
+	animation: spin 3s infinite linear;
+}
+
+.cube > div {
+	position: absolute;
+	opacity: 0.7;
+	height: 200px;
+	width: 200px;
+	background-image: url("./texture200.png");
+}
+
+.cube div:nth-child(1) {
+	transform: translateZ(100px);
+}
+.cube div:nth-child(2) {
+	transform: rotateY(90deg) translateZ(100px);
+}
+.cube div:nth-child(3) {
+	transform: rotateY(180deg) translateZ(100px);
+}
+.cube div:nth-child(4) {
+	transform: rotateY(-90deg) translateZ(100px);
+}
+.cube div:nth-child(5) {
+	transform: rotateX(-90deg) translateZ(100px) rotate(-90deg);
+}
+.cube div:nth-child(6) {
+	transform: rotateX(90deg) translateZ(100px);
+}
+
+@keyframes spin {
+	from {
+		transform: rotateX(0deg) rotateY(0deg);
+	} to {
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}

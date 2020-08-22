@@ -1,0 +1,6 @@
+Netlify
+
+username: ketaf46431@trufilth.com
+password: ketafnetlify
+
+sitename: tesseract7698.netlify.app
